@@ -11,7 +11,7 @@ import { FormsModule } from '@angular/forms';
 
 @NgModule({
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
-  declarations: [
+  declarations:  [
     AppComponent,
     HeaderComponent,
     HomeComponent,
