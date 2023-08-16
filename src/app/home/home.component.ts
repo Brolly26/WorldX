@@ -18,11 +18,7 @@ export class HomeComponent implements OnInit{
 constructor(private foodService:FoodService, private route:ActivatedRoute){}   
    
 
-ratingChanged(event: any) {
-  console.log('Novo valor do rating:', this.ratingValue);
-    
-    // Faça o que deseja com o novo valor do rating
-}
+
 ngOnInit(): void {
   //adicionando propriedade food no componente home, usando a função getAll dentro do ngOnInit
 
