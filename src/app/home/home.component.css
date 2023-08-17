@@ -1,0 +1,103 @@
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+    text-transform: none !important;
+    margin-top: 20px;
+
+
+}
+ul > li > a > img{
+    height: 20rem;
+    width: 20rem;
+    border: 1px solid whitesmoke;
+    border-radius: 1rem;
+    margin: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    color: #e72929;
+}
+
+ul > li a>:hover{
+    opacity: 0.9;
+    cursor: pointer;
+}
+.cook-time{
+    font-size: 13px;
+    color:  #d3d3d3;
+}
+.stars{
+    display: inline-grid;
+}
+ul > li   {
+    border: 1px #6600CC solid;
+    border-radius: 10px;
+    margin-bottom: 28px;
+    margin-left: 27px;
+}
+.container-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Restante do seu CSS... */
+
+
+ul {
+    position: relative;
+    z-index: 1;
+}
+.price, .cook-time{
+    margin-top: 4px;
+}
+ 
+.content{
+    padding:  .5rem 1rem;
+}
+.bubbles{
+    position: relative;
+    display: flex;
+}
+.bubbles span {
+    position:relative;
+    width: 30px;
+    height: 30px;
+    background: #4fc3dc;
+    margin: 0 4px;
+    border-radius:50%;
+    box-shadow: 0 0 0 10px #4fc3dc44, 0 0 50px #4fc3dc, 0 0 100% #4fc3dc;
+    animation: animate 15s linear infinite;
+    animation-duration: calc(125s / var(--i));
+}
+.bubbles span:nth-child(even){
+background: #ff2d75;
+box-shadow: 0 0 0 10px #4fc3dc44,
+0 0 50px #4fc3dc,
+0 0 100px #4fc3dc;
+}
+
+
+  
+
+@keyframes animate {
+    
+    0%{
+        transform: translateY(100vh) scale(0);
+    }
+    100%{
+        transform: translateY(-10vh) scale(1);
+    }
+ 
+
+    
+
+}

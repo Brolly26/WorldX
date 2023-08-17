@@ -1,0 +1,65 @@
+<div class="container-back">
+    <div class="bubbles">
+        <span style="--i:11;"></span>
+        <span style="--i:12;"></span>
+        <span style="--i:24;"></span>
+        <span style="--i:10;"></span>
+        <span style="--i:14;"></span>
+        <span style="--i:23;"></span>
+        <span style="--i:18;"></span>
+        <span style="--i:16;"></span>
+        <span style="--i:19;"></span>
+        <span style="--i:20;"></span>
+        <span style="--i:22;"></span>
+        <span style="--i:25;"></span>
+        <span style="--i:18;"></span>
+        <span style="--i:21;"></span>
+        <span style="--i:15;"></span>
+        <span style="--i:13;"></span>
+        <span style="--i:26;"></span>
+        <span style="--i:17;"></span>
+        <span style="--i:13;"></span>
+        <span style="--i:28;"></span>
+        
+
+    </div>
+</div>
+
+<app-search> </app-search>
+<app-tags></app-tags>
+
+<ul>
+    <li *ngFor="let food of foods">
+        <a href="">
+             <img src="{{food.imageUrl}}" alt="">
+             <div class="content" style="margin-left: 10px;">
+                <div class="name" style="text-transform: capitalize;">
+                    {{food.name}}
+                    <span class="favorite {{food.favorite?'':'not'}}">
+                        💜
+                    </span>
+                </div>
+                
+              <div class="product-item-footer">
+                <div class="origins">
+                    <span *ngFor="let origin of food.origins">
+                        {{origin}}
+                    </span>
+
+                </div>
+                <div>
+                <igc-rating value="ratingVal" min="1" max="5"  [readOnly]="true"></igc-rating>
+            </div>
+                <div class="cook-time" style="float: right; margin-top: 8px;">
+                    <span></span>
+                    🕗  {{food.cookTime}} 
+                </div>
+                <div class="price"  style="float: left; margin-bottom:10px">
+                 Preço: R$ {{food.price}}
+                </div>
+              </div>
+            </div>
+
+        </a>
+    </li>
+</ul>
