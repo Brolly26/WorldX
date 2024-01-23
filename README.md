@@ -2,9 +2,13 @@
 https://brolly26.github.io/WorldX/
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.0.
 
+https://github.com/Brolly26/WorldX/assets/88597147/2940cf81-27f2-4470-8c73-2c3b3e30e67f
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+
+
 
 ## Code scaffolding
 
